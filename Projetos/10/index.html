@@ -18,11 +18,14 @@
         let btn = document.querySelector("#btn");
         let soma = document.querySelector("#soma");
         if (parseInt(num1) && parseInt(num2)) {
-          alert(parseInt(num1) + parseInt(num2));
+          alert(somar(num1, num2));
         } else {
           alert("numero invalidos");
         }
       };
+      function somar(num1, num2) {
+        return parseInt(num1) + parseInt(num2);
+      }
     </script>
   </body>
 </html>

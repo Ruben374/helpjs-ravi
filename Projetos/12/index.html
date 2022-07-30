@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn1">Verde</button>
+    <button id="btn2">Vermelho</button>
+    <div style="width: 400px; height: 400px" id="div"></div>
+
+    <script>
+      let btn1 = document.getElementById("btn1");
+      let btn2 = document.getElementById("btn2");
+      let div = document.getElementById("div");
+      btn1.addEventListener("click", function () {
+        div.style.backgroundColor = "green";
+      });
+      btn2.addEventListener("click", function () {
+        div.style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>

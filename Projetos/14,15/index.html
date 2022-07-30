@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14</title>
+  </head>
+  <body>
+    <div id="resultado"></div>
+    <button class="btn">Inserir texto novo</button>
+    <script>
+      window.onload = function () {
+        document.getElementById("resultado").innerHTML =
+          "Este texto foi inserido pelo javascript";
+      };
+
+      let btn = document.querySelector(".btn");
+      btn.addEventListener("click", function () {
+        document.getElementById("resultado").innerHTML =
+          "Este novo texto foi inserido pelo botão inserir texto novo";
+      });
+    </script>
+  </body>
+</html>
